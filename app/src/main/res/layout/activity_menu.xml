@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".my_app.MenuActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click an option to see the app"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/firstProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fiRST PROJECT"
+        />
+    <Button
+        android:id="@+id/imc_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IMC App"
+        />
+
+
+</LinearLayout>
