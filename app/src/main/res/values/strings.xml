@@ -9,5 +9,11 @@
     <string name="result">Your BIM is : </string>
     <string name="result_1">Your Result</string>
     <string name="recalculate">Recalculate</string>
-
+    <string name="normal">Normal</string>
+    <string name="finalText">This is the final textResult</string>
+    <string name="healthy">Great! you are healthy</string>
+    <string name="eat_more">Hmmm you need to eat more</string>
+    <string name="low_weight">You need to gain weight</string>
+    <string name="over_weight">Over weight</string>
+    <string name="high_weight">You need to lose weight fatty</string>
 </resources>
