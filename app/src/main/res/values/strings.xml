@@ -16,4 +16,16 @@
     <string name="low_weight">You need to gain weight</string>
     <string name="over_weight">Over weight</string>
     <string name="high_weight">You need to lose weight fatty</string>
+
+    <!-- Todo app -->
+    <string name="td_welcome">Welcome!</string>
+    <string name="td_category">Category</string>
+    <string name="td_tasks">Tasks</string>
+    <string name="td_write_something">Write something</string>
+    <string name="td_business">Business</string>
+    <string name="td_other">Other</string>
+    <string name="td_personal">Personal</string>
+    <string name="td_add_todo">Add</string>
+
+
 </resources>
