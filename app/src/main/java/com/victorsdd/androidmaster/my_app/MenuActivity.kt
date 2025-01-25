@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.victorsdd.androidmaster.R
 import com.victorsdd.androidmaster.my_app.ImcApp.ImcMainActivity
 import com.victorsdd.androidmaster.my_app.firstApp.FirstAppActivity
+import com.victorsdd.androidmaster.my_app.superHero.SuperHeroActivity
 import com.victorsdd.androidmaster.my_app.todoApp.TodoMainActivity
 
 
@@ -13,6 +14,7 @@ enum class ProjectType {
     FIRST_PROJECT,
     SECOND_PROJECT,
     THIRD_PROJECT,
+    SUPER_HERO_PROJECT,
 }
 
 class MenuActivity : AppCompatActivity() {
@@ -26,6 +28,7 @@ class MenuActivity : AppCompatActivity() {
 
         val todoApp = findViewById<Button>(R.id.todo_app)
 
+        val superHeroApp = findViewById<Button>(R.id.super_hero_app)
 
         firstProject.setOnClickListener {
             navigateTo(ProjectType.FIRST_PROJECT)
@@ -39,9 +42,10 @@ class MenuActivity : AppCompatActivity() {
             navigateTo(ProjectType.THIRD_PROJECT)
         }
 
-
+        superHeroApp.setOnClickListener {
+            navigateTo(ProjectType.SUPER_HERO_PROJECT)
+        }
     }
-
 
     private fun navigateTo(project:ProjectType){
         when(project){
@@ -55,6 +59,10 @@ class MenuActivity : AppCompatActivity() {
             }
             ProjectType.THIRD_PROJECT -> {
                 val intent = Intent(this, TodoMainActivity::class.java)
+                startActivity(intent)
+            }
+            ProjectType.SUPER_HERO_PROJECT -> {
+                val intent = Intent(this, SuperHeroActivity::class.java)
                 startActivity(intent)
             }
         }

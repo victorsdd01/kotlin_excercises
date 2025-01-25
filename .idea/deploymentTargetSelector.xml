@@ -4,14 +4,17 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-10-08T14:10:48.498203Z">
+        <DropdownSelection timestamp="2025-01-24T01:48:33.316831Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/victorsdd/.android/avd/Pixel_6a_-6.13i.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/victorsdd/.android/avd/pixel_6a_6.13_API_33.avd" />
             </handle>
           </Target>
         </DropdownSelection>
         <DialogSelection />
+      </SelectionState>
+      <SelectionState runConfigName="SuperHeroActivity">
+        <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
   </component>

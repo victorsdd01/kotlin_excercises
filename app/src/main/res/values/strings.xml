@@ -27,5 +27,14 @@
     <string name="td_personal">Personal</string>
     <string name="td_add_todo">Add</string>
 
+    <!-- super herp app -->
+    <string name="sp_search">Search</string>
+    <string name="superhero_stat_intelligence">Intelligence</string>
+    <string name="superhero_stat_strength">Strength</string>
+    <string name="superhero_stat_speed">Speed</string>
+    <string name="superhero_stat_durability">Durability</string>
+    <string name="superhero_stat_power">Power</string>
+    <string name="superhero_stat_combat">Combat</string>
+
 
 </resources>
