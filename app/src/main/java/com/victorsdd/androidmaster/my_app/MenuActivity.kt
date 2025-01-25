@@ -4,67 +4,47 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.victorsdd.androidmaster.R
+import com.victorsdd.androidmaster.databinding.ActivityMenuBinding
 import com.victorsdd.androidmaster.my_app.ImcApp.ImcMainActivity
 import com.victorsdd.androidmaster.my_app.firstApp.FirstAppActivity
+import com.victorsdd.androidmaster.my_app.settings.SettingsActivity
 import com.victorsdd.androidmaster.my_app.superHero.SuperHeroActivity
 import com.victorsdd.androidmaster.my_app.todoApp.TodoMainActivity
 
-
-enum class ProjectType {
-    FIRST_PROJECT,
-    SECOND_PROJECT,
-    THIRD_PROJECT,
-    SUPER_HERO_PROJECT,
-}
-
 class MenuActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMenuBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
-        val firstProject = findViewById<Button>(R.id.firstProject)
+        binding = ActivityMenuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        listeners()
+    }
 
-        val imgApp = findViewById<Button>(R.id.imc_app)
-
-        val todoApp = findViewById<Button>(R.id.todo_app)
-
-        val superHeroApp = findViewById<Button>(R.id.super_hero_app)
-
-        firstProject.setOnClickListener {
-            navigateTo(ProjectType.FIRST_PROJECT)
+    private fun listeners(){
+        binding.firstProject.setOnClickListener {
+            navigateTo(FirstAppActivity::class.java)
         }
 
-        imgApp.setOnClickListener {
-            navigateTo(ProjectType.SECOND_PROJECT)
+        binding.imcApp.setOnClickListener {
+            navigateTo(ImcMainActivity::class.java)
         }
 
-        todoApp.setOnClickListener {
-            navigateTo(ProjectType.THIRD_PROJECT)
+        binding.todoApp.setOnClickListener {
+            navigateTo(TodoMainActivity::class.java)
         }
 
-        superHeroApp.setOnClickListener {
-            navigateTo(ProjectType.SUPER_HERO_PROJECT)
+        binding.superHeroApp.setOnClickListener {
+            navigateTo(SuperHeroActivity::class.java)
+        }
+
+        binding.settings.setOnClickListener {
+            navigateTo(SettingsActivity::class.java)
         }
     }
 
-    private fun navigateTo(project:ProjectType){
-        when(project){
-            ProjectType.FIRST_PROJECT -> {
-                val intent = Intent(this, FirstAppActivity::class.java)
-                startActivity(intent)
-            }
-            ProjectType.SECOND_PROJECT -> {
-                val intent = Intent(this, ImcMainActivity::class.java)
-                startActivity(intent)
-            }
-            ProjectType.THIRD_PROJECT -> {
-                val intent = Intent(this, TodoMainActivity::class.java)
-                startActivity(intent)
-            }
-            ProjectType.SUPER_HERO_PROJECT -> {
-                val intent = Intent(this, SuperHeroActivity::class.java)
-                startActivity(intent)
-            }
-        }
+    private fun navigateTo(activityClass: Class<*>){
+       val intent = Intent(this, activityClass)
+        startActivity(intent)
     }
 }

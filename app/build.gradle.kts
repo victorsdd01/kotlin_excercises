@@ -53,4 +53,5 @@ dependencies {
     implementation(libs.retrofit.gson.converter)
     implementation(libs.gson)
     implementation(libs.picasso)
+    implementation(libs.datastore.preferences)
 }

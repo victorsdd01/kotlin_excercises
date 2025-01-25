@@ -36,5 +36,23 @@
     <string name="superhero_stat_power">Power</string>
     <string name="superhero_stat_combat">Combat</string>
 
+    <string name="dark_mode">Dark mode</string>
+    <string name="light_mode">Light mode</string>
+
+    <string name="dark_mode_Desc">Enable the dark mode in this app</string>
+
+    <string name="light_mode_Desc">Enable the light mode in this app</string>
+
+    <string name="bluetooth"> Bluetooth</string>
+    <string name="bluetooth_desc">Enable bluetooth in this app</string>
+
+    <string name="wifi"> Wifi</string>
+    <string name="wifi_desc">Enable wifi in this app</string>
+
+    <string name="sound"> Volume</string>
+
+    <string name="vibration"> Vibration</string>
+    <string name="vibration_desc">Enable vibration in this app</string>
+
 
 </resources>
